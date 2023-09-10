@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/getValue"
+        android:layout_width="392dp"
+        android:layout_height="81dp"
+        android:layout_margin="12dp"
+        android:ems="10"
+        android:hint="ENTER TEMPERATURE"
+        android:textSize="32sp"
+        android:inputType="number"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="0.0"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        />
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/c2f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C 2 F"
+
+
+            />
+
+        <RadioButton
+            android:id="@+id/f2c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="F 2 C" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/ansBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOW ANSWER"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AGAIN"
+            android:layout_gravity="center"
+            android:id="@+id/again"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
